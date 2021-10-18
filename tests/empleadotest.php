@@ -16,4 +16,9 @@ abstract class empleadotest extends \PHPUnit\Framework\TestCase
     $this->expectException(\Exception::class);
     $r = $this->construct("luis", "");
  }
+   public function dnivacio() 
+   {
+    $this->expectException(\Exception::class);
+    $r = $this->construct("luis", "Gonzales",empty($dni));
+ }
 }
